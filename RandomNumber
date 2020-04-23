@@ -45,12 +45,21 @@ a2:active {
 <a2 href="#" onclick="myFunction()">&#8250;</a2>
 </span>
 </div>
+<div>
+  <label for="fname">Name:</label><br>
+  <input type="text" id="fname" name="fname" value="Shubham">
+  <button type="button" id="idSubmit" onclick="onSubmit()">Submit</button>
+  </div>
 
 <script>
 function myFunction(){
 var m= ["Random1","Random2","Random3","Random4","Random5","Random6","Random7","Random8","Random9","Random10"];
 var num = Math.floor(Math.random() * 10); 
  document.getElementById("p1").innerHTML = m[num];
+}
+function onSubmit(){
+var name = document.getElementById("fname").value;
+document.getElementById("p1").innerHTML = name;
 }
 </script>
 </body>
