@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.inline {
+  display: inline-block;
+}
+a1 {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+
+}
+a1:hover {
+  color: #cc0000;
+  cursor: pointer;
+}
+a1:active {
+  color: #6600ff;
+}
+a2 {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+
+}
+a2:hover {
+  color: #cc0000;
+  cursor: pointer;
+}
+a2:active {
+  color: #6600ff;
+}
+</style>
+</head>
+<body>
+<div id="rand">
+<span class="inline">
+<a1 href="#" onclick="myFunction()">&#8249;</a1>
+</span>
+<span class="inline">
+<p id="p1"></p>
+</span>
+<span class="inline">
+<a2 href="#" onclick="myFunction()">&#8250;</a2>
+</span>
+</div>
+
+<script>
+function myFunction(){
+var m= ["Random1","Random2","Random3","Random4","Random5","Random6","Random7","Random8","Random9","Random10"];
+var num = Math.floor(Math.random() * 10); 
+ document.getElementById("p1").innerHTML = m[num];
+}
+</script>
+</body>
+</html>
